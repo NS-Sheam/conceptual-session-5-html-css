@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #a53dff;
+  --secondary-color: #edd8ff80;
+  --gray-900: #132238;
+  --gray-800: #2b384c;
+  --gray-700: #424e60;
+  --gray-600: #556070;
+  --gray-500: #697484;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+/* header section starts */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.logo h2 {
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.logo p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  text-align: center;
+}
+nav ul li {
+  padding: 0.8rem 1.5rem;
+}
+nav ul li a {
+  color: #333333;
+}
+/* header section ends  */
+/* banner section starts  */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.banner .left {
+  flex: 1.5;
+}
+/* banner left section  */
+.banner .left h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+.banner .left p.details {
+  font-size: 1.1rem;
+  color: var(--gray-600);
+  margin-top: 1.5rem;
+}
+.banner .left button {
+  margin-top: 1.5rem;
+}
+.banner .left .experience {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.banner .left .experience div {
+  background-color: var(--secondary-color);
+  padding: 1rem 1.5rem;
+  width: 100%;
+  border: 2px solid #fff;
+  text-align: center;
+}
+.banner .left .experience div h3 {
+  font-size: 1.2rem;
+  color: var(--gray-700);
+}
+.banner .left .experience div p {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+}
+
+/* banner right section  */
+.banner .right {
+  flex: 1;
+}
+.banner .right img {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0px 24px 116px 0px rgba(43, 56, 76, 0.09);
+}
+
+/* banner section ends */
+
+/* work process section starts  */
+.process {
+  padding: 2rem 0;
+  background-color: #f0f1f3;
+}
+.process .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.process .left {
+  flex: 1;
+}
+.process .left h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+.process .left p {
+  font-size: 1.1rem;
+  color: var(--gray-600);
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.process .right {
+  flex: 1;
+}
+.process .right {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.process .right .item {
+  background-color: #fff;
+  padding: 3rem 2rem 2rem 2rem;
+  border-radius: 12px;
+}
+
+.process .right div i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.process .right div h3 {
+  font-size: 1.5rem;
+  color: var(--gray-900);
+  margin-top: 1rem;
+}
+
+.process .right div p {
+  font-size: 1rem;
+  color: var(--gray-600);
+  margin-top: 1rem;
+}
+/* work process section ends */
+
+/* portfolio section starts */
+.portfolio {
+  padding: 100px 20px;
+}
+
+.portfolio h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  text-align: center;
+}
+.portfolio p {
+  font-size: 1.1rem;
+  color: var(--gray-600);
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.portfolio .grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.portfolio .grid-container .item {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 24px 116px 0px rgba(43, 56, 76, 0.09);
+}
+
+.portfolio .grid-container .item img {
+  width: 100%;
+  border-radius: 12px;
+}
+.portfolio .content {
+  margin-top: 2rem;
+}
+.portfolio .content small {
+  font-size: 1rem;
+  color: var(--gray-500);
+}
+.portfolio .grid-container .item h3 {
+  font-size: 1.5rem;
+  color: var(--gray-900);
+  margin-top: 1rem;
+}
+.portfolio .grid-container .item p {
+  font-size: 1rem;
+  color: var(--gray-600);
+  margin-top: 1rem;
+  text-align: left;
+}
+.portfolio .grid-container .item button {
+  margin-top: 1rem;
+}
+
+/* portfolio section ends */
+
+/* footer section starts */
+footer {
+  background-color: var(--gray-800);
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+footer .logo p {
+  color: #fff;
+}
+footer nav ul li a {
+  color: #fff;
+}
+
+/* footer section ends */

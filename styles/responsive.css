@@ -1,0 +1,78 @@
+/* media query for responsive design */
+/* for medium screens */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  header {
+    flex-direction: row;
+  }
+  nav {
+    flex-direction: row;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  .banner {
+    flex-direction: row;
+    padding: 126px 20px 222px 20px;
+  }
+  .banner .left h1 {
+    font-size: 4.5rem;
+  }
+  .banner .left .experience div h3 {
+    font-size: 2rem;
+  }
+  .banner .left .experience div p {
+    font-size: 1rem;
+  }
+
+  .process {
+    padding: 240px 0 140px 0;
+    background-color: #f0f1f3;
+  }
+
+  .process .container {
+    flex-direction: row;
+  }
+  .process .right {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+  .process .left h2 {
+    font-size: 3rem;
+    text-align: left;
+  }
+  .process .left p {
+    text-align: left;
+  }
+  .process .right div:nth-child(odd) {
+    position: relative;
+    top: -1.5rem;
+  }
+
+  .portfolio h2 {
+    font-size: 3rem;
+  }
+
+  .portfolio .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
+  footer {
+    padding: 100px 0 50px 0;
+  }
+  footer .container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+/* for large screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+}
